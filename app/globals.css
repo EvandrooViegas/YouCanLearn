@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --secondary-color: rgb(115, 115, 115);
+  --secondary-color-alpha: rgba(115, 115, 115, 0.7);
+  --primary-color: #FF5050;
+  --border-primary: rgb(63 63 70);
+  --border-primary-hover:  rgb(113 113 122);
+  --blur-color: rgba(4, 4, 4, 30%)
+}
+
+
+
+.nav-z-index {
+  z-index: 10;
+}
+
+.content-z-index {
+  z-index: 5;
+}
+
+.word-wrap {
+  word-wrap: break-word;
+}
+
+.bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.872);
+  
+}
+
+.bg-0 {
+  background-image: url("../assets/images/bg0.jpg");
+}
