@@ -8,7 +8,7 @@ type Props = {
 export default function NavLink(props:Props) {
     const { link } = props
   return (
-    <li className='md:text-xl text-2xl list-none'>
+    <li className='hover:underline list-none text-neutral-900  font-bold text-sm'>
         <a href={link.href}>{link.name}</a>
     </li>
   )

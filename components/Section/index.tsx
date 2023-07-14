@@ -17,7 +17,7 @@ export default function Section(props: Props) {
 
   return (
     <section id={id} className={`bg ${isFullScreen ? 'min-h-screen' : 'min-h-fit'} w-full flex flex-col ${className}`}>
-      <Overlay showOverlayBg={showOverlayBg} className={`md:px-20 px-12 py-16 grow flex flex-col gap-4 ${overlayClassName}`} >
+      <Overlay showOverlayBg={showOverlayBg} className={`md:px-20 px-12  grow flex flex-col gap-4 ${overlayClassName}`} >
         {title ? <h4 className="text-2xl md:text-3xl text-center mb-12">{title}</h4> : null}
         {children}
       </Overlay>

@@ -8,13 +8,18 @@ const button = cva("button", {
         "bg-primary",
         "text-white",
         "border-transparent",
-        "hover:brightness-150",
+        "hover:bg-white/80",
+        "hover:backdrop-blur-lg",
+        "hover:text-primary",
+        "font-bold",
+        "transition-all",
+        "rounded",
         "w-fit"
       ],
 
     },
     size: {
-      medium: ["text-base", "py-2.5", "px-12"],
+      medium: ["text-md", "py-2.5", "px-12"],
     },
   },
   compoundVariants: [{ intent: "primary", size: "medium" }],

@@ -5,13 +5,16 @@
 :root {
   --secondary-color: rgb(115, 115, 115);
   --secondary-color-alpha: rgba(115, 115, 115, 0.7);
-  --primary-color: #FF5050;
+  --primary-color: #2ea4ff;
   --border-primary: rgb(63 63 70);
   --border-primary-hover:  rgb(113 113 122);
   --blur-color: rgba(4, 4, 4, 30%)
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
 
 .nav-z-index {
   z-index: 10;

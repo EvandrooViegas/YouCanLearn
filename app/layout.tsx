@@ -1,8 +1,8 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
-import { Red_Rose } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const redRose = Red_Rose({ subsets: ['latin'] })
+const poppins = Poppins({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export const metadata = {
   title: 'Torna-te um desenvolvedor Outsystem',
@@ -17,8 +17,9 @@ export default function RootLayout(props: Props) {
   return (
     <html lang="en">
       
-      <body className={`${redRose.className} text-white scroll-smooth`}>
+      <body className={`${poppins.className} scroll-smooth max-w-5xl mx-auto`}>
         <Navbar />
+
         {children}
       </body>
     </html>
