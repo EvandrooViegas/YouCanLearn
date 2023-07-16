@@ -15,6 +15,7 @@ module.exports = {
         "border-primary": "var(--border-primary)",
         "border-primary-hover": "var(--border-primary-hover)",
       },
+    
     },
   },
 };

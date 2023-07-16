@@ -5,22 +5,23 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import { LinksList } from "./LinksList";
+import { useNavbarContext } from "./context";
 
 export default function MoblieNav() {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isMobileNavbarOpned, toggleMobileNavbar } = useNavbarContext()
   return (
     <div className="block md:hidden">
       <button
         className={`relative nav-z-index `}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={toggleMobileNavbar}
       >
-        { isOpen ? <IoCloseSharp /> : <RxHamburgerMenu />}
+        {isMobileNavbarOpned  ? <IoCloseSharp /> : <RxHamburgerMenu />}
       </button>
 
       {/* NAVLINKS FOR SMALL DEVICES */}
       
       <AnimatePresence>
-        {isOpen ? (
+        {isMobileNavbarOpned ? (
           <motion.div
             initial={{ opacity: 0 }}
             exit={{ opacity: 0 }}

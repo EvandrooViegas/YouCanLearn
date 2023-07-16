@@ -9,9 +9,9 @@ export default async function Page() {
   return (
     <main>
       <Home /> 
-      <Courses /> 
-      <Questions />
-      <Contact />
+      {/* <Courses />  */}
+      {/* <Questions /> */}
+      {/* <Contact /> */}
     </main>
   );
 }

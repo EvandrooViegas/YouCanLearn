@@ -2,21 +2,20 @@ import React from "react";
 import Logo from "./Logo";
 import { LinksList } from "./LinksList";
 import MoblieNav from "./MoblieNav";
+import { screenExtremesClassname } from "../Section";
 
 export default function Navbar() {
   return (
-    <>
-      <nav className="bg-white fixed nav-z-index inset-x-0 top-0">
-
-        <div className="mx-auto max-w-5xl flex items-center justify-between md:px-20 px-12 py-3">         
-          <Logo />
-          <div className="hidden md:block">
-            <LinksList />
-          </div>
-          <MoblieNav />
+    <nav className="bg-white fixed nav-z-index inset-x-0 top-0">
+      <div
+        className={`mx-auto flex items-center justify-between py-3 md:py-0 ${screenExtremesClassname}`}
+      >
+        <Logo />
+        <div className="hidden md:block">
+          <LinksList />
         </div>
-      </nav>
-    </>
-
+        <MoblieNav />
+      </div>
+    </nav>
   );
 }
