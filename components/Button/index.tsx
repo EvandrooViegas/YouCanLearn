@@ -11,7 +11,6 @@ const button = cva("button", {
         "hover:bg-white/80",
         "hover:backdrop-blur-lg",
         "hover:text-primary",
-        "font-bold",
         "transition-all",
         "rounded",
         "w-fit"

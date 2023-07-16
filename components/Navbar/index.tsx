@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white fixed nav-z-index inset-x-0 top-0">
       <div
-        className={`mx-auto flex items-center justify-between py-3 md:py-0 ${screenExtremesClassname}`}
+        className={`flex items-center justify-between py-3 ${screenExtremesClassname}`}
       >
         <Logo />
         <div className="hidden md:block">

@@ -1,19 +1,21 @@
 import React from "react";
-import Overlay from "../Overlay";
 
-type PageSections = "courses" | "questions" | "devs" | "contact" | "home"
+type PageSections = "courses" | "questions" | "devs" | "contact" | "home" | "about"
 type Props = {
   children: React.ReactNode;
   id: PageSections;
+  backgroundClassName?: string
 } & React.HTMLAttributes<HTMLElement>;
-export const screenExtremesClassname = "max-w-[1700px] px-8"
+export const screenExtremesClassname = "max-w-[1500px] px-8 mx-auto"
 
 export default function Section(props: Props) {
-  const { children, id = "home", className } = props;
+  const { children, id = "home", className, backgroundClassName } = props;
 
   return (
-    <section id={id} className={`${screenExtremesClassname} ${className}`}>
-      {children}
+    <section id={id} className={`${backgroundClassName}`}>
+      <div className={`${screenExtremesClassname} ${className}`}>
+        {children}
+      </div>
     </section>
    
   );

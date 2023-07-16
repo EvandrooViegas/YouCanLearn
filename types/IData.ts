@@ -8,4 +8,10 @@ export default interface Data {
     courses: ICourse[]
     questions: IQuestion[];
     devs: iDev[]
+    pages: {
+        about: {
+            title: string
+            text: string
+        }
+    }
 }
