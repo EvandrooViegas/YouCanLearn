@@ -6,7 +6,7 @@ import { screenExtremesClassname } from "../Section";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white fixed nav-z-index inset-x-0 top-0">
+    <nav className="bg-white fixed nav-z-index inset-x-0 top-0 shadow-xl">
       <div
         className={`flex items-center justify-between py-3 ${screenExtremesClassname}`}
       >

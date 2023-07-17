@@ -3,7 +3,7 @@ import React from "react";
 type PageSections = "courses" | "questions" | "devs" | "contact" | "home" | "about"
 type Props = {
   children: React.ReactNode;
-  id: PageSections;
+  id?: PageSections;
   backgroundClassName?: string
 } & React.HTMLAttributes<HTMLElement>;
 export const screenExtremesClassname = "max-w-[1500px] px-8 mx-auto"

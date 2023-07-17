@@ -1,8 +1,8 @@
 export const links = [
-    { name: "Cursos", href: "#courses" },
+    { name: "Home", href: "/" },
     { name: "Sobre", href: "#about" },
+    { name: "Cursos", href: "#courses" },
     { name: "Perguntas", href: "#questions" },
-    { name: "Desenvolvedores", href: "#devs" },
     { name: "Contacto", href: "#contact" },
 ]
 

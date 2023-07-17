@@ -18,10 +18,10 @@ export default function Field(props: Props) {
   const fieldAttr = {
     ...rest,
     className: `
-    w-full transition px-6 py-3
+    w-full transition px-6 py-4
     bg-transparent border-transparent outline-none 
-    border-b border-zinc-500 text-neutral-200  
-    focus:border-primary  ${className}
+    border-b border-zinc-300 placeholderdlder:text-neutral-200 text-black  
+    focus:border-primary bg-neutral-200 focus:bg-neutral-300  ${className}
     `,
   } as IField;
   const error = errors?.[id]?.message;

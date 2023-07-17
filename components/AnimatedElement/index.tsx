@@ -1,21 +1,55 @@
-"use client"
+"use client";
 
-import { motion, HTMLMotionProps } from "framer-motion"
-import { HTMLAttributes, ReactElement, ReactHTML } from "react"
+import { motion, HTMLMotionProps, useInView, Options } from "framer-motion";
+import { HTMLAttributes, ReactHTML, useEffect, useMemo, useRef, useState } from "react";
 
 type Props<T extends keyof ReactHTML> = {
-  children: React.ReactNode,
-  element: T
-} & HTMLAttributes<HTMLDivElement> & HTMLMotionProps<T>
+  children: React.ReactNode;
+  element?: T;
+  animateOnView: boolean;
+  animateOnce?: boolean;
+  intersectionOptions?: Options
+} & HTMLAttributes<HTMLDivElement> &
+  HTMLMotionProps<T>;
 
-export default function AnimatedElement<T extends keyof ReactHTML>(props: Props<T>) {
-  const { children, element = "div", ...rest } = props
-  // @ts-expect-error
-  const Motion = motion[element]
+export default function AnimatedElement<T extends keyof ReactHTML>(
+  props: Props<T>
+) {
+  const {
+    children,
+    element = "div",
+    animateOnView = true,
+    animateOnce = true,
+    animate,
+    intersectionOptions,
+    ...rest
+  } = props;
+  const Motion = useMemo(
+    // @ts-expect-error
+    () => motion[element] as (typeof motion)["div"],
+    [element]
+  );
 
+  const ref = useRef<HTMLDivElement | null>(null);
+  const [hasAnimated, setHasAnimated] = useState(false)
+  const isIntersecting = useInView(ref, {
+    once: Boolean(animateOnce && hasAnimated),
+    ...intersectionOptions
+  });
+  const animation = useMemo(
+    () => (animateOnView ? (isIntersecting ? animate : undefined) : animate),
+    [animate, animateOnView, isIntersecting]
+  );
+  useEffect(() => {
+    if(isIntersecting) setHasAnimated(true)
+  }, [isIntersecting])
   return (
-    <Motion {...rest}>
-      { children }
+    <Motion
+      {...rest}
+      ref={ref}
+      animate={animation}
+    >
+      {children}
     </Motion>
-  )
+  );
 }

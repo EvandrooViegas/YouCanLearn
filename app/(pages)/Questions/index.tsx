@@ -1,16 +1,37 @@
 import QuestionList from "@/components/QuestionToggler/question-list";
 import Section from "@/components/Section";
-import data from "@/data";
 export default async function Questions() {
+  const questions = [
+    {
+      text: "Question 1",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus rem, adipisci culpa mollitia omnis doloremque dignissimos quidem! Id eum beatae provident ratione incidunt qui ea tempore, eveniet nobis iure!",
+    },
+    {
+      text: "Question 2",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus rem, adipisci culpa mollitia omnis doloremque dignissimos quidem! Id eum beatae provident ratione incidunt qui ea tempore, eveniet nobis iure!",
+    },
+    {
+      text: "Question 3",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus rem, adipisci culpa mollitia omnis doloremque dignissimos quidem! Id eum beatae provident ratione incidunt qui ea tempore, eveniet nobis iure!",
+    },
+    {
+      text: "Question 4",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus rem, adipisci culpa mollitia omnis doloremque dignissimos quidem! Id eum beatae provident ratione incidunt qui ea tempore, eveniet nobis iure!",
+    },
+
+  ];
   return (
     <Section
-    className="bg-gradient-to-b from-zinc-900 to-zinc-900"
-      title="Perguntas ❓"
       id="questions"
+      className="py-12"
     >
-      <div className="grow flex  items-center">
-        <QuestionList questions={data.questions} />
-      </div>
+        <h4 className="text-2xl font-bold text-primary mb-4">Perguntas Frequentes</h4>
+
+        <QuestionList questions={questions} />
     </Section>
   );
 }

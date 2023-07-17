@@ -7,7 +7,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { FieldContextProvider } from "@/components/Field/context";
 import { Button } from "@/components/Button";
-import data from "@/data"
 import sendEmail from "@/utils/send-email";
 const emailSchema = z.object({
   name: z.string(),
@@ -25,16 +24,17 @@ export default function Contact() {
       email,
       name,
       message,
-      reciverEmail: data.email,
-      subject: data.emailSubject
+      reciverEmail: "valdemiroviegas@yahoo.com",
+      subject: "YouCanLearn - Mensagem"
     })
   };
   return (
     <Section
-      title="Contact 📫"
+    className="py-12"
       id="contact"
-      className="bg-gradient-to-b from-zinc-900 to-zinc-900"
     >
+        <h4 className="text-2xl font-bold text-primary mb-2">Contacte-nos</h4>
+      
       <div className="grow flex items-center">
         <form
           className="w-full grid md:grid-cols-2 gap-4"

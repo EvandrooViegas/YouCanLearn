@@ -6,7 +6,7 @@ const Field = (props:Props) => {
   switch (fieldType) {
     case "textarea": {
       const { ...textareaRest } = props as ITextArea;
-      return <textarea {...textareaRest} className={`h-32 resize-none ${className} `} ></textarea>;
+      return <textarea {...textareaRest} className={`h-24 resize-none ${className} `} ></textarea>;
     }
     case "select": {
       const { options, ...selectRest } = props as ISelect;

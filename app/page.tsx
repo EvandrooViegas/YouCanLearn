@@ -3,6 +3,7 @@ import Contact from "./(pages)/Contact";
 import Courses from "./(pages)/Courses";
 import Home from "./(pages)/Home";
 import Questions from "./(pages)/Questions";
+import TalkWithUs from "./(pages)/TalkWithUs";
 
 
 export default async function Page() {
@@ -11,9 +12,10 @@ export default async function Page() {
     <main>
       <Home /> 
       <About />
-      {/* <Courses />  */}
-      {/* <Questions /> */}
-      {/* <Contact /> */}
+      <Courses /> 
+      <Questions />
+      <TalkWithUs />
+      <Contact />
     </main>
   );
 }
