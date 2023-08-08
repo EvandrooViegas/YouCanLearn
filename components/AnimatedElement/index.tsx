@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, HTMLMotionProps, useInView, Options } from "framer-motion";
+import { motion, HTMLMotionProps, useInView } from "framer-motion";
 import { HTMLAttributes, ReactHTML, useEffect, useMemo, useRef, useState } from "react";
 
 type Props<T extends keyof ReactHTML> = {
@@ -8,7 +8,7 @@ type Props<T extends keyof ReactHTML> = {
   element?: T;
   animateOnView: boolean;
   animateOnce?: boolean;
-  intersectionOptions?: Options
+  intersectionOptions?: any
 } & HTMLAttributes<HTMLDivElement> &
   HTMLMotionProps<T>;
 
