@@ -11,6 +11,17 @@
   --blur-color: rgba(4, 4, 4, 30%)
 }
 
+
+.hide-scrollbar  {
+  overflow-y: hidden; 
+  overflow-x: hidden;
+}
+
+.show-scrollbar  {
+  overflow-y: auto; 
+  overflow-x: auto;
+}
+
 .full {
   width: 100%;
   height: 100%;

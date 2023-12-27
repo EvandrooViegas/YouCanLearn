@@ -9,5 +9,8 @@ type Props = {
 
 export default function Providers(props: Props) {
   const { children } = props;
-  return <NavbarContextProvider>{children}</NavbarContextProvider>;
+  return <NavbarContextProvider>
+    {children}
+    
+    </NavbarContextProvider>;
 }

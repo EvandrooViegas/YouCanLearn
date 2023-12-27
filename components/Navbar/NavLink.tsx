@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react'
+import React, { useRef } from 'react'
 import { type Link } from './links'
 import { useNavbarContext } from './context'
 
@@ -13,7 +13,7 @@ export default function NavLink(props:Props) {
     const { onNavbarLinkClick } = useNavbarContext()
   return (
     <li 
-      className='hover:text-primary list-none text-zinc-900 text-sm' 
+      className={`text-zinc-900 hover:text-primary list-none  text-sm`} 
       onClick={onNavbarLinkClick}
     >
         <a href={link.href}>{link.name}</a>

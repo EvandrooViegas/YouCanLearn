@@ -4,6 +4,7 @@ import React from 'react'
 export default function TalkWithUs() {
   return (
     <Section
+    id='talkwithus'
     backgroundClassName='bg bg-0'
     className='relative p-24 flex flex-col justify-center items-center'
     >

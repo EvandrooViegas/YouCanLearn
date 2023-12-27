@@ -10,17 +10,12 @@ export default async function Courses() {
   return (
     <Section className="p-12 flex flex-col" id="courses">
         <h4 className="text-2xl font-bold text-primary mb-3">
-          Boocamp -
-          Outsystems Reactive Developer
+        Curso - Outsystems Reactive Developer
         </h4>
       <div className="grid md:grid-cols-2 items-center gap-4">
         <div className="flex flex-col gap-6">
           <p className="text-neutral-800">
-            O Bootcamp Outsystems Reactive Developer é um curso intensivo e
-            focado 100% na pratica. Ao longo do Bootcamp, os alunos desenvolvem
-            projetos reais, baseados nos desafios enfrentados por profissionais
-            no mercado de trabalho. No fim do Bootcamo os alunos estarão aptos
-            para Desenvolver Aplicações Web com a Plataforma Outsystems.
+          O curso OutSystems Reactive Developer é uma experiência educacional intensiva e totalmente orientada para a prática. Durante o programa, os participantes se envolvem na execução de projetos reais, alinhados com os desafios enfrentados por profissionais no dinâmico mercado de trabalho. Ao concluir o curso, os formandos estarão habilmente capacitados para desenvolver aplicações reativas utilizando a plataforma OutSystems.
           </p>
           <Button>Inscrever-se</Button>
         </div>

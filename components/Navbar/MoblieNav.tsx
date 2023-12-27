@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,6 +9,15 @@ import { useNavbarContext } from "./context";
 
 export default function MoblieNav() {
   const { isMobileNavbarOpned, toggleMobileNavbar } = useNavbarContext()
+  useEffect(() => {
+    if(!isMobileNavbarOpned) {
+      window.document.body.classList.remove("hide-scrollbar")
+      window.document.body.classList.add("show-scrollbar")
+    } else {
+      window.document.body.classList.remove("show-scrollbar")
+      window.document.body.classList.add("hide-scrollbar")
+    }
+  }, [isMobileNavbarOpned])
   return (
     <div className="block md:hidden">
       <button

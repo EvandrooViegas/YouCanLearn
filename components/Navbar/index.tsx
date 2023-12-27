@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import { LinksList } from "./LinksList";
 import MoblieNav from "./MoblieNav";
-import { screenExtremesClassname } from "../Section";
+export const screenExtremesClassname = "max-w-[1500px] px-8 mx-auto"
 
 export default function Navbar() {
   return (

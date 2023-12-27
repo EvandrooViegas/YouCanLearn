@@ -15,7 +15,7 @@ export default function Home() {
       {/* With Video Background */}
       <div className="md:grid md:grid-cols-2 flex flex-col mt-24 full md:gap-y-0 gap-y-12">
         <div className="flex flex-col justify-center full text-center md:text-start">
-          <h4 className="md:text-[40px] text-[23px]">
+          <h4 className="md:text-[42.5px] text-[24px]">
             Torna-te num Desenvolvedor
           </h4>
           <h1 className="md:text-[100px] text-[58px] leading-[70px] font-bold text-primary">
