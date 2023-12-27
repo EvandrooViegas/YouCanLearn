@@ -19,6 +19,7 @@ const button = cva("button", {
     },
     size: {
       medium: ["text-md", "py-2.5", "px-12"],
+      small: ["text-sm", "py-1.5", "px-6"],
     },
   },
   compoundVariants: [{ intent: "primary", size: "medium" }],

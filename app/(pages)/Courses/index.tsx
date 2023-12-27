@@ -28,16 +28,16 @@ export default async function Courses() {
           <Info
             icon={ImAlarm}
             title="Horário Pós-Laboral"
+            subtitle="Das 19h às 21h"
             description="
-              Das 19h às 21h
-              2ª; 3ª; 5ª e 6ª
+               2ª; 3ª e 4ª
             "
           />
           <Info icon={RiHourglassFill} title="Duração" description="1 Mês" />
           <Info
             icon={IoPricetagsOutline}
             title="Preço"
-            description="2000.000 AKZ"
+            description="100.000 AKZ"
           />
         </div>
       </div>

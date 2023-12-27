@@ -31,7 +31,7 @@ export default function QuestionToggler(props: Props) {
             exit={exit}
             animate={animate}
             initial={initial}
-            className="text-sm text-neutral-600"
+            className="text-sm text-neutral-600 whitespace-pre-line"
           >
             {question.answer}
           </motion.p>
