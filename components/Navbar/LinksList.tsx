@@ -10,7 +10,7 @@ export const LinksList = () => {
       ))}
       <li>
         <Button size={"small"}>
-        <a target="_blank" href="https://personal-cz9pe0mx.outsystemscloud.com/YCL/Course">
+        <a target="_blank" href="https://personal-4kvj0qzg.outsystemscloud.com/YCL/Course?_ts=638414461739285779">
         Entrar
         </a>
         </Button>

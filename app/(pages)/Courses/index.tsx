@@ -17,7 +17,9 @@ export default async function Courses() {
           <p className="text-neutral-800">
           O curso OutSystems Reactive Developer é uma experiência educacional intensiva e totalmente orientada para a prática. Durante o programa, os participantes se envolvem na execução de projetos reais, alinhados com os desafios enfrentados por profissionais no dinâmico mercado de trabalho. Ao concluir o curso, os formandos estarão habilmente capacitados para desenvolver aplicações reativas utilizando a plataforma OutSystems.
           </p>
+          <a href="https://personal-cz9pe0mx.outsystemscloud.com/Register/Register?_ts=638414348112416621" target="_blank">
           <Button>Inscrever-se</Button>
+          </a>
         </div>
         <div className="grid grid-cols-2 gap-2">
           <Info
