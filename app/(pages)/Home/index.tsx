@@ -21,7 +21,11 @@ export default function Home() {
           <h1 className="md:text-[100px] text-[58px] leading-[70px] font-bold text-primary">
             Outsystems
           </h1>
-          <Button className="mt-8 w-full md:w-fit">Inscrever-se</Button>
+          
+<a href="https://personal-cz9pe0mx.outsystemscloud.com/Register/Register?_ts=638414348112416621">
+<Button className="mt-8 w-full md:w-fit">Inscrever-se</Button>
+
+</a>
         </div>
         <div className="relative pb-[100%] ">
           <div>
