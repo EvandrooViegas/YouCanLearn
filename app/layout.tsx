@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Torna-te um desenvolvedor Outsystem",
-  description: "Faz parte da comunidade de desenvolvedores Outsystem em Angola",
+  title: "Torna-te um Desenvolvedor Outsystem",
+  description: "Faz parte da Comunidade de Desenvolvedores Outsystem em Angola",
   icons: { icon: '/icon.svg' }
 };
 

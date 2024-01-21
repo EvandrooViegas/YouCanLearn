@@ -7,9 +7,9 @@ type Props = {
   question: IQuestion;
 };
 
-const exit = { height: 0, opacity: 0 };
-const animate = { height: "auto", opacity: 1 };
-const initial = { height: 0, opacity: 0 };
+const exit = { height: 0, opacity: 0, marginTop: 0 };
+const animate = { height: "auto", opacity: 1, marginTop: [0, 12] };
+const initial = { height: 0, opacity: 0, marginTop: 0 };
 
 export default function QuestionToggler(props: Props) {
   const { question } = props;

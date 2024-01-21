@@ -9,22 +9,15 @@ export default async function Questions() {
     },
     {
       text: "Quais são os requisitos mínimos do computador para assistir as aulas?",
-      answer: `
-      Requisitos mínimos do computador para assistir as aulas
-      PC ou Notebooks
-      Processador Intel ou AMD Quad-Core (4 núcleos) ou superior; 
+      answer: `PC ou Notebooks com acesso a internet;
+      Processador Intel ou superior; 
       4GB RAM ou superior;
-      Processador Intel ou AMD Quad-Core (4 núcleos) ou superior; 
       8GB RAM ou superior;
-      Windows 8.1 (todas as versões); 
-      Windows 10 (todas as versões)
-      `,
+      Windows 10 ou superior;`,
     },
     {
       text: "Como está estruturado o curso?",
-      answer: `
-        O nosso curso é estruturado em quatro módulos com aulas gravadas e ao vivo (100% online). 
-        `,
+      answer: `O nosso curso é estruturado em quatro módulos com aulas gravadas e ao vivo (100% online).`,
     },
   ];
   return (
