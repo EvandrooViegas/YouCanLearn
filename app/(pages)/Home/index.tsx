@@ -22,7 +22,7 @@ export default function Home() {
             Outsystems
           </h1>
           
-<a href="https://personal-cz9pe0mx.outsystemscloud.com/Register/Register?_ts=638414348112416621">
+<a href="https://personal-cz9pe0mx.outsystemscloud.com/Register/Register?_ts=638414348112416621" target="_blank">
 <Button className="mt-8 w-full md:w-fit">Inscrever-se</Button>
 
 </a>
